@@ -440,6 +440,8 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 /* beetle mound */
 .mound-grid img {
     background: url('https://i.ibb.co/YB5fNK1g/mound-20260512005349.png') no-repeat center !important;
+	width: 0;
+	height: 0;
 
     padding-top: 80px;
     padding-right: 130px;
