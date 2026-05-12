@@ -1180,9 +1180,10 @@ div.slider.round::before {
 	content: "CSS by Sak#327675"; 
 	color: #ffb3d6; /* soft rose glow */
 	text-shadow: 1px 1px 1.5px #000; 
-	font-size: 10px !important; 
+	font-size: 12px !important; 
 	position: absolute; 
 	right: 13%; 
+	margin: 5px;
 	z-index: 100;
 
 	font-family: 'Cinzel', serif;
