@@ -149,7 +149,7 @@ READ ME:
 /* Crimson Moon Logo Replacer */
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     content: url('https://i.ibb.co/G3N4fhtT/crimsonmoonlogo-20260512023835.png');
-    width: 230px !important;
+    width: 220px !important;
     height: 120px !important;
     object-fit: contain !important;
 }
