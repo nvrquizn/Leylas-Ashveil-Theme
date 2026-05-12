@@ -457,6 +457,9 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 /* hover */
 .mound-grid img:hover {
     transition: 0.9s !important;
+	padding-top: 80px;
+	padding-right: 130px;
+	max-height:150px;
     opacity: 1;
 }
 
