@@ -131,6 +131,7 @@ READ ME:
 
     color: var(--kolur5) !important;
   }
+}
 
 /* Crimson Moon Logo Replacer */
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
