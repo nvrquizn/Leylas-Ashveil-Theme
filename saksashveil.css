@@ -538,11 +538,11 @@ table#player img:hover {
 	content: "";
 
 	position: absolute;
-	left: -3px;
-	top: 10px;
+	left: -5px;
+	top: 15px;
 
-	width: 250px;
-	height: 250px;
+	width: 275px;
+	height: 275px;
 
 	background: url("https://i.ibb.co/DffzvVy3/lioniconborder-20260512014343.png") no-repeat center;
 	background-size: contain;
