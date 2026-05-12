@@ -1315,8 +1315,7 @@ img[src$="den_beetlebook.png"] {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    gap: 10px;
-
+    overflow: hidden;
     font-family: 'Cinzel', serif;
 }
 
@@ -1325,6 +1324,10 @@ img[src$="den_beetlebook.png"] {
 /* ============================= */
 
 .box {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+
     height: 240px;
 
     background: linear-gradient(
@@ -1350,6 +1353,10 @@ img[src$="den_beetlebook.png"] {
     transition: all 0.3s ease;
 
     font-family: 'Cinzel', serif;
+}
+
+.boxcontainer .box:last-child {
+    margin-right: 0;
 }
 
 /* ============================= */
