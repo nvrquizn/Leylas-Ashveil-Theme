@@ -1308,33 +1308,31 @@ img[src$="den_beetlebook.png"] {
 }
 
 /* ============================= */
-/* 🌑 VELVET CONTAINER */
+/* 🌑 CONTAINER */
 /* ============================= */
 
-.velvetboxes {
+.boxcontainer {
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: 'Cinzel', serif;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
 
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
+    gap: 15px;
 
-    flex-wrap: nowrap;
     align-items: stretch;
+    justify-content: center;
+
+    clear: both;
 }
 
 /* ============================= */
-/* 🌹 VELVET BOX */
+/* 🌹 BOX */
 /* ============================= */
 
-.velvetbox {
+.box {
     flex: 1;
 
-    min-width: 0;
-
-    height: 240px;
+    min-height: 240px;
 
     background: linear-gradient(
         180deg,
@@ -1343,6 +1341,7 @@ img[src$="den_beetlebook.png"] {
     ) !important;
 
     color: #ffe6f2;
+
     padding: 12px;
 
     border: 1px solid rgba(255, 46, 79, 0.30);
@@ -1356,9 +1355,8 @@ img[src$="den_beetlebook.png"] {
     box-sizing: border-box;
 
     overflow-y: auto;
-    overflow-x: hidden;
 
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 
     font-family: 'Cinzel', serif;
 }
@@ -1367,7 +1365,7 @@ img[src$="den_beetlebook.png"] {
 /* ✨ HOVER */
 /* ============================= */
 
-.velvetbox:hover {
+.box:hover {
     transform: translateY(-4px);
 
     box-shadow:
@@ -1376,56 +1374,55 @@ img[src$="den_beetlebook.png"] {
 }
 
 /* ============================= */
-/* 🖼️ IMAGE SAFETY */
+/* 🔤 HEADINGS */
 /* ============================= */
 
-.velvetbox img {
+.box h3 {
+    color: #ffd6e8;
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-size: 18px;
+
+    text-shadow: 0 0 8px rgba(255, 46, 79, 0.35);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🖼️ IMAGES */
+/* ============================= */
+
+.box img {
     max-width: 100%;
     height: auto;
 
     border-radius: 6px;
 
-    box-shadow:
-        0 0 10px rgba(255, 46, 79, 0.18);
-}
-
-/* ============================= */
-/* 🔤 HEADINGS */
-/* ============================= */
-
-.velvetbox h3 {
-    color: #ffd6e8;
-
-    text-align: center;
-    margin-bottom: 6px;
-
-    font-size: 18px;
-
-    text-shadow:
-        0 0 8px rgba(255, 46, 79, 0.35);
-
-    font-family: 'Cinzel', serif;
+    box-shadow: 0 0 10px rgba(255, 46, 79, 0.18);
 }
 
 /* ============================= */
 /* 📜 SCROLLBAR */
 /* ============================= */
 
-.velvetbox::-webkit-scrollbar {
+.box::-webkit-scrollbar {
     width: 8px;
 }
 
-.velvetbox::-webkit-scrollbar-track {
+.box::-webkit-scrollbar-track {
     background: rgba(18, 0, 11, 0.95);
     border-radius: 10px;
 }
 
-.velvetbox::-webkit-scrollbar-thumb {
+.box::-webkit-scrollbar-thumb {
     background: linear-gradient(#870056, #ff2e4f);
     border-radius: 10px;
 
-    box-shadow:
-        0 0 8px rgba(255,46,79,0.35);
+    box-shadow: 0 0 8px rgba(255,46,79,0.35);
 }
 
 /* ============================= */
@@ -1434,12 +1431,12 @@ img[src$="den_beetlebook.png"] {
 
 @media (max-width: 767px) {
 
-    .velvetboxes {
+    .boxcontainer {
         flex-direction: column;
     }
 
-    .velvetbox {
+    .box {
         width: 100%;
-        height: auto;
+        min-height: auto;
     }
 }
