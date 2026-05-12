@@ -609,7 +609,7 @@ table#player img {
 /* ============================= */
 
 .container.main {
-    background: rgba(35, 0, 22, 0.92) !important;
+    background: rgba(35, 0, 22, 0.50) !important;
 
     border-left: 0px ridge;
     border-right: 0px ridge;
