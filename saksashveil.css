@@ -1,0 +1,1491 @@
+/* ========================================================= */
+/* 🩸 Sak (#327675)'s Den CSS - Ashveil Theme                */
+/* 🌑 Dark magenta aesthetic with red accents                */
+/* ========================================================= */
+
+/*
+READ ME:
+- This CSS is themed around dark velvet magenta, crimson glow,
+  gothic sci-fi ambience, and elegant shadowed luxury.
+- Colors are deep wine tones, blackened plum shades,
+  blood-red accents, and faint neon-magenta highlights.
+- Inspired by the Ashveil aesthetic from Honkai: Star Rail:
+  dramatic, mysterious, and atmospheric.
+- Designed for a rich cinematic atmosphere with subtle glow.
+- Do NOT resell or heavily edit.
+- Thank you so much for choosing my CSS, I hope you enjoy!
+*/
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Marcellus&display=swap');
+
+:root {
+
+  /* ========================================================= */
+  /* 🌑 CRIMSON VEIL PALETTE                                  */
+  /* ========================================================= */
+
+  --kolur1: #870056;      /* dark magenta */
+  --kolur170: #870056b3;
+
+  --kolur2: #b3003c;      /* crimson red */
+  --kolur270: #b3003cb3;
+
+  --kolur3: #160010;      /* near-black plum */
+  --kolur370: #160010cc;
+
+  --kolur350: #220018d9;  /* dark glass magenta */
+
+  --kolur4: #3a0026;      /* velvet shadow */
+  --kolur470: #3a0026c9;
+
+  --kolur5: #f2d6e6;      /* pale rose highlight */
+  --kolur6: #0d0008;      /* abyss black */
+  --kolur7: #d94b7d;      /* glowing magenta accent */
+
+  --kolur760: #87005645;
+  --kolur780: #b3003c45;
+
+  --darkgray: #050005;    /* void shadow */
+  --lightwhite: #f7e9f1d0;
+  --white: #ffffff;
+}
+
+/* ============================= */
+/* 🌑 BACKGROUND */
+/* ============================= */
+@media screen and (max-width: 800px){
+
+  body {
+    background: url('https://i.ibb.co/W4r2vDFH/Screenshot-2026-05-11-at-23-41-11.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Cinzel', serif;
+
+    color: var(--kolur5) !important;
+  }
+
+  /* 🌑 mobile background stabilizer */
+  html:not(.nolayout) body:after {
+    content:"";
+    position:fixed;
+    top:0;
+    height:160vh;
+    left:0;
+    right:0;
+    z-index:-1;
+
+    background:
+      linear-gradient(
+        rgba(10, 0, 8, 0.55),
+        rgba(25, 0, 18, 0.72)
+      ),
+      url('https://i.ibb.co/W4r2vDFH/Screenshot-2026-05-11-at-23-41-11.png') center center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Cinzel', serif;
+
+    color: var(--kolur5) !important;
+  }
+
+  /* 🩸 floating box positioning */
+  .boxtopper {
+    padding: none;
+    float: left;
+    margin: -180px;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    pointer-events:none !important;
+  }
+}
+
+/* ============================= */
+/* 🌑 DESKTOP BACKGROUND */
+/* ============================= */
+@media screen and (min-width: 801px){
+
+  body {
+    background:
+      linear-gradient(
+        rgba(10, 0, 8, 0.45),
+        rgba(20, 0, 15, 0.68)
+      ),
+      url('https://i.ibb.co/W4r2vDFH/Screenshot-2026-05-11-at-23-41-11.png') center center fixed;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+
+    font-family: 'Cinzel', serif;
+    font-size: 18px !important;
+
+    color: var(--kolur5) !important;
+  }
+
+  /* 🩸 floating box positioning */
+  .boxtopper {
+    padding: none;
+    float: right;
+    margin: -680px;
+    height: 30px;
+    width: 340px;
+    position: relative;
+    z-index: 3;
+    margin-right: -30px;
+    pointer-events:none !important;
+  }
+}
+
+/* Night Diamond Bloody Red Cursor */
+* {
+  cursor: url('https://cdn.cursors-4u.net/css-previews/night-diamond-bloody-red-6dc8dd29-css.webp') 0 0, auto !important;
+}
+
+/* ============================= */
+/* 🌑 CHAT MESSAGES */
+/* ============================= */
+
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(34, 10, 28, 0.92) !important; /* dark wine */
+    color: #f4d7e8 !important; /* pale rose */
+    font-family: 'Cinzel', serif;
+}
+
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(54, 0, 34, 0.82) !important; /* deep magenta */
+    color: #f4d7e8 !important;
+    font-family: 'Cinzel', serif;
+}
+
+.s-chat-message__pinned {
+    background: linear-gradient(
+        90deg,
+        rgba(34,10,28,0.95),
+        rgba(140,0,70,0.20) /* magenta glow */
+    ) !important;
+
+    color: #ffe6f2 !important;
+
+    box-shadow: 0 0 10px rgba(180,0,90,0.25); /* crimson glow */
+    font-family: 'Cinzel', serif;
+}
+
+.s-chat-message_timestamp {
+    color: #d98ab5 !important; /* dusty pink */
+    font-family: 'Cinzel', serif;
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel {
+    background: linear-gradient(90deg, #2b001d, #870056) !important; /* dark magenta fade */
+    color: #ffe6f2 !important;
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🌑 TOPBAR */
+/* ============================= */
+
+.container.topbar {
+    background: linear-gradient(
+        180deg,
+        rgba(20, 0, 16, 0.95),
+        rgba(10, 0, 10, 0.95)
+    ) !important;
+
+    border-radius: 12px !important;
+
+    box-shadow:
+        inset 0 0 20px rgba(135,0,86,0.10),
+        0 0 10px rgba(170,0,90,0.18),
+        1px 1px 5px var(--darkgray) !important;
+
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* 🌑 welcome text */
+.welcomeback {
+    color: #f0c8de !important;
+    font-size: 16px;
+
+    text-shadow: 0 0 5px rgba(135,0,86,0.35);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* 🩸 username link */
+.welcomeback a {
+    color: #c04a82 !important;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 6px rgba(170,0,90,0.35);
+
+    transition: 0.5s;
+
+    font-family: 'Cinzel', serif;
+}
+
+.welcomeback a:hover {
+    color: #ffe6f2 !important;
+
+    text-shadow: 0 0 10px rgba(255,120,180,0.45);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🌑 LINKS */
+/* ============================= */
+
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* dark magenta links */
+.toplinks li a {
+    color: #d9b3c9 !important; /* soft mauve */
+    font-size: 15px;
+    text-decoration: none;
+
+    padding: 4px 10px;
+    border-radius: 8px;
+
+    transition: 0.4s ease;
+}
+
+/* glow hover */
+.toplinks li a:hover {
+    color: #ffe6f2 !important; /* pale rose */
+
+    background: rgba(135, 0, 86, 0.18);
+    box-shadow: 0 0 10px rgba(180, 0, 110, 0.22);
+
+    text-shadow: 0 0 6px rgba(255, 140, 190, 0.35);
+}
+
+/* ============================= */
+/* 🩸 ICONS */
+/* ============================= */
+
+.toplinks img.icon {
+    filter:
+        drop-shadow(0 0 4px rgba(135, 0, 86, 0.25))
+        brightness(1.05);
+
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter:
+        drop-shadow(0 0 8px rgba(255, 120, 180, 0.35))
+        brightness(1.12);
+}
+
+/* ============================= */
+/* 💰 CURRENCY NUMBERS */
+/* ============================= */
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #f2c6dc !important; /* soft pink light */
+
+    text-shadow: 0 0 6px rgba(135, 0, 86, 0.35);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🚪 LOGOUT */
+/* ============================= */
+
+.toplinks li a[href*="logout"] {
+    color: #f0c8de !important;
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(135, 0, 86, 0.15);
+
+    box-shadow: 0 0 10px rgba(135, 0, 86, 0.28);
+}
+
+/* ============================= */
+/* 🩸 CAVES */
+/* ============================= */
+
+div.cave-grid > img {
+    height: 150px;
+    width: 250px;
+    opacity: 0.82;
+    border-radius: 10px !important;
+
+    box-shadow:
+        0 0 12px rgba(135, 0, 86, 0.18) !important;
+
+    transition: 1s ease;
+}
+
+/* hover base */
+div.cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.08) contrast(1.03);
+}
+
+/* prideoverview */
+div.cave-grid > img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/s9pMKDPs/prideoverview-20260512003943.png') !important;
+}
+
+div.cave-grid > img[src$="prideoverviewbanner.png"]:hover {
+    content: url('https://i.ibb.co/s9pMKDPs/prideoverview-20260512003943.png') !important;
+}
+
+/* unsorted lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/SXGMpK8H/unsortedlions-20260512004645.png') !important;
+}
+
+div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/SXGMpK8H/unsortedlions-20260512004645.png') !important;
+}
+
+/* nesting */
+div.cave-grid > img[src$="nestingbanner.png"] {
+    content: url('https://i.ibb.co/ycKhf5d8/nestinglionesses-20260512004304.png') !important;
+}
+
+div.cave-grid > img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/ycKhf5d8/nestinglionesses-20260512004304.png') !important;
+}
+
+/* default caves */
+div.cave-grid > img[src$="cavedefault.jpg"],
+div.cave-grid > img[src$="caveunused.jpg"] {
+    content: url("https://i.ibb.co/ZzXYmpL4/defaultcaves-20260512005115.png") !important;
+}
+
+/* ============================= */
+/* 🌸 FEATURED LIONESS */
+/* ============================= */
+
+.lionImage img:first-child {
+    visibility: hidden;
+}
+
+.lionImage {
+    background: url('https://i.ibb.co/3yysfx2y/Screenshot-2026-05-12-at-01-01-55.png') no-repeat !important;
+    background-size: cover;
+
+    box-shadow:
+        0 0 18px rgba(135, 0, 86, 0.20);
+}
+
+/* ============================= */
+/* 🌑 CAVE / PANEL STYLE */
+/* ============================= */
+
+.cave-grid,
+.mound-grid {
+    background: rgba(38, 0, 24, 0.82) !important; /* deep dark magenta base */
+
+    box-shadow:
+        inset 0 0 22px rgba(135, 0, 86, 0.10),
+        0 0 10px rgba(0,0,0,0.45),
+        0 0 10px rgba(180, 0, 110, 0.18) !important;
+
+    border-radius: 12px !important;
+
+    text-shadow: 1px 1px 1.5px #12000a;
+
+    max-height: 175px;
+    max-width: 250px;
+    overflow: hidden;
+
+    font-family: 'Cinzel', serif;
+    color: #ffe6f2 !important;
+}
+
+/* ============================= */
+/* 🌑 MOUNDS */
+/* ============================= */
+
+/* beetle mound */
+.mound-grid img {
+    background: url('https://i.ibb.co/YB5fNK1g/mound-20260512005349.png') no-repeat center !important;
+
+    width: 0 !important;
+    height: 0 !important;
+
+    padding-top: 80px;
+    padding-right: 130px;
+
+    max-height: 150px;
+
+    border-radius: 10px !important;
+    opacity: 0.85;
+
+    box-shadow:
+        1px 1px 5px rgba(0,0,0,0.55),
+        0 0 10px rgba(135, 0, 86, 0.18) !important;
+}
+
+/* hover */
+.mound-grid img:hover {
+    transition: 0.9s !important;
+    opacity: 1;
+}
+
+/* ============================= */
+/* 🌑 LINKS */
+/* ============================= */
+
+a:link,
+a:visited {
+    color: #f0c8de !important; /* pale rose */
+
+    transition: 0.5s !important;
+
+    text-shadow: 0 0 6px rgba(135, 0, 86, 0.25);
+
+    font-family: 'Cinzel', serif;
+}
+
+a:hover {
+    color: #ffe6f2 !important; /* brighter glow */
+}
+
+/* ============================= */
+/* ✨ MAGENTA GLOW HEADINGS */
+/* ============================= */
+
+h1, h2, h3 {
+    text-shadow: 0 0 10px rgba(180, 0, 110, 0.22);
+
+    font-family: 'Cinzel', serif;
+
+    color: #ffe6f2 !important;
+}
+
+/* ============================= */
+/* 🩸 LION + USER AVATAR */
+/* ============================= */
+
+div#lion_image {
+    opacity: .88;
+
+    box-shadow:
+        0 0 14px rgba(135, 0, 86, 0.25) !important;
+
+    border-radius: 6% !important;
+
+    overflow: hidden;
+
+    margin-top: 19px;
+    margin-left: 6px;
+
+    transition: .6s ease;
+}
+
+div#lion_image:hover {
+    opacity: 1;
+
+    box-shadow:
+        0 0 20px rgba(255, 120, 180, 0.30) !important;
+
+    transition: .6s ease;
+}
+
+table#player img {
+    opacity: 0.88;
+
+    box-shadow:
+        0 0 12px rgba(135, 0, 86, 0.20) !important;
+
+    border-radius: 8px;
+}
+
+table#player img:hover {
+    opacity: 1;
+
+    box-shadow:
+        0 0 18px rgba(255, 140, 190, 0.28) !important;
+
+    transition: .6s ease;
+}
+
+/* code by hok-z #170947 */
+#lion_image:after {
+content:url("https://i.ibb.co/DffzvVy3/lioniconborder-20260512014343.png");
+position:absolute;
+	left: -3px;
+	top: 10px;
+}
+
+table#player img {
+	border-radius: 5% !important;
+	overflow: hidden;
+}
+
+/* ============================= */
+/* 🌑 NAVBAR (DARK MAGENTA GLOW) */
+/* ============================= */
+
+.navbar {
+    background: #2a001a; /* near-black magenta base */
+
+    border-bottom: 0px ridge !important;
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 -40px 60px rgba(135, 0, 86, 0.18),
+        0 0 10px rgba(180, 0, 110, 0.18) !important;
+
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 18px !important;
+
+    color: #ffe6f2 !important;
+
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #870056;
+
+    color: #ffffff !important;
+
+    text-shadow: 0 0 8px rgba(255, 140, 190, 0.45);
+
+    border-radius: 18px;
+
+    box-shadow:
+        inset 0 0 18px rgba(255, 120, 180, 0.18);
+
+    transition: 0.7s !important;
+}
+
+/* ============================= */
+/* 🩸 MAIN PANEL */
+/* ============================= */
+
+.container.main {
+    background: rgba(35, 0, 22, 0.92) !important;
+
+    border-left: 0px ridge;
+    border-right: 0px ridge;
+    border-bottom: 0px ridge;
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 0 90px rgba(180, 0, 110, 0.10),
+        0 0 10px rgba(135, 0, 86, 0.18) !important;
+
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🌑 LEFT PANEL */
+/* ============================= */
+
+.col-md-9 {
+    background: none;
+
+    border-right: none;
+
+    color: #ffe6f2 !important;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🩸 BREADCRUMB */
+/* ============================= */
+
+.breadcrumb {
+    background: #3a0024 !important;
+
+    border: 0px ridge !important;
+
+    border-radius: 5px;
+
+    box-shadow:
+        inset 0 0 18px rgba(180, 0, 110, 0.12),
+        0 0 8px rgba(135, 0, 86, 0.15) !important;
+
+    font-family: 'Cinzel', serif;
+}
+
+.breadcrumb .active {
+    color: #ffe6f2;
+
+    font-size: 18px !important;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* ✨ BUTTONS */
+/* ============================= */
+
+input.floatright {
+	background: rgba(135, 0, 86, 0.18) !important;
+
+	border: 0px ridge;
+
+	border-radius: 10px !important;
+
+	color: #ffe6f2 !important;
+
+	text-shadow: 0 0 4px rgba(255, 46, 79, 0.25) !important;
+
+	box-shadow:
+		inset 0 0 18px rgba(135, 0, 86, 0.22),
+	    0 0 6px rgba(255, 46, 79, 0.18) !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+input.floatright:hover {
+	background: rgba(160, 0, 105, 0.22) !important;
+
+	box-shadow:
+		inset 0 0 22px rgba(255, 46, 79, 0.22),
+	    0 0 10px rgba(135, 0, 86, 0.28) !important;
+
+	transition: .7s !important;
+}
+
+button.button {
+	background: #870056;
+
+	border: 0px ridge;
+
+	border-radius: 10px !important;
+
+	color: #ffe6f2;
+
+	font-size: 18px !important;
+
+	text-shadow: 0 0 4px rgba(255, 46, 79, 0.25);
+
+	box-shadow:
+		inset 0 0 18px rgba(135, 0, 86, 0.25),
+	    0 0 6px rgba(255, 46, 79, 0.18) !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+button.button:hover {
+	background: #a1006a;
+
+	color: #ffffff;
+
+	box-shadow:
+		inset 0 0 24px rgba(255, 46, 79, 0.28),
+	    0 0 12px rgba(135, 0, 86, 0.30) !important;
+
+	transition: .7s !important;
+}
+
+/* ============================= */
+/* 🌙 COMMENT BOX */
+/* ============================= */
+
+#commentBox {
+	background: rgba(90, 0, 58, 0.55) !important;
+
+	box-shadow:
+		inset 0 0 18px rgba(255, 46, 79, 0.15),
+	    0 0 6px rgba(135, 0, 86, 0.18) !important;
+
+	border: none !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+::placeholder {
+	color: #ffd6e8 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+div.comment {
+	background: rgba(120, 0, 75, 0.55);
+
+	box-shadow:
+		inset 0 0 18px rgba(255, 46, 79, 0.18),
+	    0 0 6px rgba(135, 0, 86, 0.18) !important;
+
+	font-weight: bold;
+
+	color: #ffeaf5;
+
+	font-family: 'Cinzel', serif;
+}
+
+input#comment {
+	background: rgba(200, 0, 120, 0.18) !important;
+
+	color: #1a0010 !important;
+
+	border-radius: 10px !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+small.text-muted {
+	color: #ffd6e8;
+
+	font-family: 'Cinzel', serif;
+}
+
+small.text-muted a {
+	color: #ff9ac2;
+
+	font-family: 'Cinzel', serif;
+}
+
+input[type="button"].bad {
+	background: #b3006b !important;
+
+	border-radius: 10px !important;
+
+	color: #1a0010 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌙 GENERAL ALERT */
+.alert {
+	background: #870056;
+
+	border: 0px ridge;
+
+	text-align: center;
+
+	text-shadow: 1px 1px 2px #000;
+
+	border-radius: 10px !important;
+
+	float: none;
+
+	color: #ffeaf5 !important;
+
+	box-shadow:
+		#ff2e4f33 0px -50px 36px -28px inset,
+		1px 1px 5px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* ⚠️ WARNING ALERT */
+.alert-warning{
+	background: #a1006a;
+
+	border: 0px ridge;
+
+	text-align: center;
+
+	text-shadow: 1px 1px 2px #000;
+
+	border-radius: 10px !important;
+
+	float: none;
+
+	color: #ffffff !important;
+
+	box-shadow:
+		#ff2e4f33 0px -50px 36px -28px inset,
+		1px 1px 5px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* ❗ DANGER ALERT */
+.alert-danger {
+	background: #5a0038 !important;
+
+	text-align: center;
+
+	border: 0px ridge;
+
+	text-shadow: 1px 1px 2px #000;
+
+	border-radius: 10px !important;
+
+	float: none;
+
+	color: #ffeaf5 !important;
+
+	box-shadow:
+		#ff2e4f33 0px -50px 36px -28px inset,
+		1px 1px 5px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌑 SIDE BOXES / FEATURE PANELS */
+.feature,
+div.left {
+	background: #6a0044 !important;
+
+	box-shadow:
+		#ff2e4f22 0px -80px 36px -28px inset,
+		1px 1px 5px #000 !important;
+
+	text-shadow: 1px 1px 2px #000;
+
+	border-radius: 10px !important;
+
+	border: none!important;
+
+	color: #ffeaf5 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌙 MAIN PANELS */
+.panel {
+	background: #870056 !important;
+
+	border: 0px ridge !important;
+
+	border-radius: 10px;
+
+	color:#ffeaf5 !important;
+
+	box-shadow:
+		#ff2e4f22 0px -50px 36px -28px inset,
+		1px 1px 5px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* ✨ TEXT INSIDE BARS */
+.progress div {
+	color: #ffffff !important;
+
+	font-size: 13px !important;
+
+	text-shadow: 1px 1px 1px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌑 BAR BACKGROUND */
+.progress {
+	background: linear-gradient(#5a0038, #870056);
+
+	box-shadow:1px 1px 5px #000 !important;
+
+	border-radius: 20px;
+}
+
+/* ❤️ ENERGY BAR */
+.progress-bar-warning {
+   background: linear-gradient(#ff2e4f, #a1006a)!important;
+}
+
+/* 🩸 HUNGER BAR */
+.progress-bar-danger {
+    background: linear-gradient(#870056, #ff2e4f)!important;
+}
+
+/* ✨ XP BAR */
+.progress-bar-success {
+    background: linear-gradient(#ff9ac2, #870056)!important;
+}
+
+/* 📊 GENERAL BAR STYLE */
+.progress-bar {
+    background: linear-gradient(#ff2e4f, #b3006b);
+
+	border-radius: 20px;
+
+	box-shadow:1px 1px 5px #000 !important;
+}
+
+/* 🏆 ACHIEVEMENT BAR */
+div:nth-child(2)>div>div>div.progress-bar.progress-bar-success {
+	background: linear-gradient(#ff9ac2, #870056)!important;
+}
+
+/* 📈 ACCOUNT STANDING */
+th > div > div.progress-bar.progress-bar-success {
+    background: linear-gradient(#ff2e4f, #a1006a)!important;
+}
+  
+/* 🌲 MAIN HEADER */
+h1 {
+	color: #ffe6f2;
+
+	font-size: 72px;
+
+	font-family: 'Cinzel', serif;
+
+	text-align: center;
+
+	text-shadow: 0 0 12px rgba(255, 46, 79, 0.25);
+}
+
+/* 🍷 SUB HEADER */
+h2 {
+	color: #ffd6e8;
+
+	font-size: 56px;
+
+	text-align: center;
+
+	text-shadow: 0 0 10px rgba(160, 0, 105, 0.22);
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌹 SMALL HEADER */
+h3 {
+	color: #fff0f6 !important;
+
+	font-size: 22px !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* ✨ HOVER EFFECT */
+h3:hover {
+	color: #ff9ac2 !important;
+
+	transition: .7s!important;
+}
+
+/* 🌑 MAIN LION INFO TABLE (container) */
+.table {
+	background: #2a001b; /* deep dark magenta */
+
+	border: 0px ridge;
+
+	text-shadow: 1px 1px 1.5px #000;
+
+	border-radius: 10px !important;
+
+	border-collapse: separate;
+
+	box-shadow:
+		0 0 8px rgba(255, 46, 79, 0.12);
+
+	font-family: 'Cinzel', serif;
+}
+
+.table a:link,
+.table a:visited {
+	color: #ffb3d6 !important;
+
+	transition: 0.5s!important;
+
+	font-family: 'Cinzel', serif;
+}
+
+.table a:active {
+	color: #ffffff !important;
+
+	transition: 0.5s!important;
+
+	font-family: 'Cinzel', serif;
+}
+
+.table a:hover {
+	color: #ffe6f2 !important;
+
+	transform: scale(1.05);
+
+	transition: 0.7s!important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌹 HEADER ROWS */
+.top,
+.bottom,
+th {
+	background: #870056 !important;
+
+	box-shadow:
+		0 0 12px rgba(255, 46, 79, 0.12) inset,
+		1px 1px 5px #000 !important;
+
+	color: #ffe6f2 !important;
+
+	font-size: 18px !important;
+
+	border-radius: 10px;
+
+	font-family: 'Cinzel', serif;
+}
+
+.table .left {
+	background: #3a0026 !important;
+
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.08) inset !important;
+
+	border-radius: 10px;
+}
+
+/* 🌑 INPUT FIELDS */
+input,
+select,
+textarea {
+	background: #3a0026 !important;
+
+	border: 0px ridge !important;
+
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.12) inset,
+		1px 1px 5px #000 !important;
+
+	border-radius: 10px;
+
+	color: #ffe6f2 !important;
+
+	text-shadow: 1px 1px 2px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌹 INNER TABLE LEFT */
+.inner-table .left {
+	background: #4a0030 !important;
+
+	color: #ffe6f2 !important;
+
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.10) inset,
+		1px 1px 5px #000 !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌑 INNER TABLE RIGHT */
+.inner-table .right {
+	background: #2a001b !important;
+
+	box-shadow:
+		0 0 12px rgba(255, 46, 79, 0.12) inset,
+		1px 1px 5px #000 !important;
+
+	color: #ffe6f2 !important;
+
+	border-radius: 10px;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌹 RIGHT ODD */
+.right_odd {
+	background: #1f0014 !important;
+
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.10) inset !important;
+}
+
+/* 🌑 ITEM HEADER */
+.item-header {
+	background: #870056 !important;
+
+	border-radius: 10px;
+
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.12) inset !important;
+
+	color: #ffe6f2 !important;
+
+	font-size: 15px !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌹 ITEM */
+.item {
+	background: #3a0026 !important;
+
+	box-shadow:
+		0 0 12px rgba(255, 46, 79, 0.10) inset,
+		1px 1px 5px #000 !important;
+
+	border-radius: 10px;
+
+	border: 0px ridge !important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌿 ITEM FOOTER */
+.item-footer {
+	background: #2a001b;
+}
+
+/* 🍷 SLIDER */
+div.slider.round {
+	background: #a1006a !important; /* dark magenta glow */
+}
+
+div.slider.round::before {
+	background: #ffe6f2 !important; /* pale rose light */
+}
+
+/* 🌑 BOX CONTAINERS */
+.boxcontainer {
+	background: none;
+
+	height: auto;
+
+	padding: 0px;
+
+	display: flex;
+
+	justify-content: center;
+}
+
+/* 🌹 BOXES */
+.Box1,
+.Box2 {
+	float: left;
+
+	background: linear-gradient(180deg, #870056, #2a001b);
+
+	color: #ffe6f2;
+
+	padding: 15px;
+
+	border: 0px ridge !important;
+
+	box-shadow:
+		0 0 20px rgba(255, 46, 79, 0.10) inset,
+		1px 1px 5px #000 !important;
+
+	border-radius: 10px;
+
+	margin: 5px;
+
+	height: 300px;
+
+	width: 350px;
+
+	overflow: hidden;
+
+	margin-bottom: 25px;
+
+	transition: 1s;
+
+	font-family: 'Cinzel', serif;
+}
+
+.Box1:hover,
+.Box2:hover {
+	overflow-y: auto;
+}
+
+/* 🌑 SCROLLBAR */
+::-webkit-scrollbar {
+	width: 9px;
+
+	height: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background: #2a001b;
+
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.10) inset,
+		1px 1px 5px #000 !important;
+
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #870056;
+
+	box-shadow:
+		0 0 12px rgba(255, 154, 194, 0.12) inset,
+		1px 1px 5px #000 !important;
+
+	border-radius: 10px;
+}
+
+/* 📱 MOBILE OVERRIDE */
+@media only screen and (max-width: 767px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
+}
+
+/* 🌹 CREDITS (DO NOT REMOVE) */ 
+.breadcrumb::after { 
+	content: "CSS by Sak#327675"; 
+	color: #ffb3d6; /* soft rose glow */
+	text-shadow: 1px 1px 1.5px #000; 
+	font-size: 17px !important; 
+	position: absolute; 
+	right: 13%; 
+	z-index: 100;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* 🌑 DYNASTY LIST — MAGENTA GLOW */
+.dynastylist .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	transition: 0.8s ease;
+	box-shadow: 1px 1px 5px #000;
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+/* ensure anchor doesn't collapse layout */
+.dynastylist a {
+	display: block;
+}
+
+/* shared behavior fix */
+.dynastylist .left {
+	display: block;
+}
+
+/* change beetle book image by TawnyCollar#251887 */
+img[src$="den_ancestors.png"] {
+	background:none!important; 
+      content:url('https://i.ibb.co/vx3Hj6nP/Screenshot-2026-05-11-at-23-53-01.png')!important;
+}
+
+img[src$="den_ancestorsfem.png"] {
+	background:none!important; 
+	    content:url('https://i.ibb.co/fdgy74Pw/Screenshot-2026-05-11-at-23-53-14.png')!important;
+	transform: scaleX(-1);
+}
+
+img[src$="den_achievements.png"] {
+	background:none!important; 
+      content:url('https://i.ibb.co/mCSfh5Dt/Screenshot-2026-05-11-at-23-53-27.png')!important;
+}
+
+img[src$="den_showcase.png"] {
+	background:none!important; 
+       content:url('https://i.ibb.co/ks8FyVLY/Screenshot-2026-05-11-at-23-53-35.png')!important;
+	transform: scaleX(-1);
+}
+
+img[src$="den_beetlebook.png"] {
+	background:none!important; 
+       content:url('https://i.ibb.co/NgwLynMc/Screenshot-2026-05-11-at-23-53-46.png');
+}
+
+/* 🍃 hover glow effect — dark magenta shimmer */
+.row.dynastycollection .dynastylist .left:hover {
+	transform: scale(1.03);
+	box-shadow:
+		0 0 10px rgba(255, 46, 79, 0.25),
+		0 0 20px rgba(160, 0, 105, 0.18),
+		1px 1px 5px #000;
+	filter: brightness(1.08) saturate(1.1);
+}
+
+/* 🌑 BACKGROUND TABLE — VELVET DEPTH */
+.table {
+	background: #12000b; /* deep magenta-black base */
+	border: 0px ridge;
+	text-shadow: 1px 1px 1.5px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 10px rgba(255, 46, 79, 0.15);
+
+	font-family: 'Cinzel', serif;
+}
+
+.table a:link {
+	color: #ffb3d6 !important; /* rose glow */
+	transition: 0.5s!important;
+
+	font-family: 'Cinzel', serif;
+}
+
+.table a:visited {
+	color: #ffb3d6 !important;
+	transition: 0.5s!important;
+
+	font-family: 'Cinzel', serif;
+}
+
+.table a:active {
+	color: #ffffff !important; /* pale flash */
+	transition: 0.5s!important;
+
+	font-family: 'Cinzel', serif;
+} 
+
+.table a:hover {
+	color: #ffe6f2 !important;
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
+
+	font-family: 'Cinzel', serif;
+}
+
+/* pagedoll */
+.container.main::after {
+	 content: "";
+    background-image: url('https://i.ibb.co/4RbQGb1t/Ashveilpagedoll-20260512003628.png');
+    background-size: cover;
+    position: fixed;
+	display: block;
+    height:200px;
+    width:200px;
+	right:0px;
+    bottom: 1rem;
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* ============================= */
+/* 🌑 CONTAINER — VELVET LAYERS */
+/* ============================= */
+.boxcontainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 🌹 BOX — DARK MAGENTA GLOW */
+/* ============================= */
+.box {
+    flex: 1;
+    height: 240px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(135, 0, 86, 0.95),
+        rgba(18, 0, 11, 0.95)
+    ) !important;
+
+    color: #ffe6f2;
+    padding: 12px;
+
+    border: 1px solid rgba(255, 46, 79, 0.30);
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,0.65),
+        inset 0 0 25px rgba(255, 46, 79, 0.10),
+        0 0 8px rgba(160, 0, 105, 0.14);
+
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    transition: all 0.35s ease;
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* ✨ VELVET HOVER — NEON ROSE LIGHT */
+/* ============================= */
+.box:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 25px rgba(255, 46, 79, 0.28),
+        inset 0 0 35px rgba(160, 0, 105, 0.16);
+
+    border-color: rgba(255, 154, 194, 0.40);
+}
+
+/* ============================= */
+/* 🖼️ IMAGE SAFETY */
+/* ============================= */
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+
+    box-shadow: 0 0 10px rgba(255, 46, 79, 0.18);
+}
+
+/* ============================= */
+/* 🔤 HEADINGS — ROSE LIGHT */
+/* ============================= */
+.box h3 {
+    color: #ffd6e8;
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 18px;
+
+    text-shadow: 0 0 8px rgba(255, 46, 79, 0.35);
+
+    font-family: 'Cinzel', serif;
+}
+
+/* ============================= */
+/* 📜 SCROLLBAR — VELVET GLASS */
+/* ============================= */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+    background: rgba(18, 0, 11, 0.95);
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#870056, #ff2e4f);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255,46,79,0.35);
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 767px) {
+    .boxcontainer {
+        flex-direction: column;
+    }
+
+    .box {
+        height: auto;
+    }
+}
