@@ -1356,6 +1356,11 @@ img[src$="den_beetlebook.png"] {
     font-family: 'Cinzel', serif;
 }
 
+/* remove spacing on last box */
+.boxcontainer .box:last-child {
+    margin-right: 0;
+}
+
 /* ============================= */
 /* ✨ VELVET HOVER — NEON ROSE LIGHT */
 /* ============================= */
