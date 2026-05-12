@@ -132,20 +132,6 @@ READ ME:
     color: var(--kolur5) !important;
   }
 
-  /* 🩸 floating box positioning */
-  .boxtopper {
-    padding: none;
-    float: right;
-    margin: -680px;
-    height: 30px;
-    width: 340px;
-    position: relative;
-    z-index: 3;
-    margin-right: -30px;
-    pointer-events:none !important;
-  }
-}
-
 /* Crimson Moon Logo Replacer */
 div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
     content: url('https://i.ibb.co/G3N4fhtT/crimsonmoonlogo-20260512023835.png');
