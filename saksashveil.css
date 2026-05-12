@@ -265,7 +265,7 @@ button#label_currentChannel {
 .toplinks {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 
     font-family: 'Cinzel', serif;
 }
@@ -273,7 +273,7 @@ button#label_currentChannel {
 /* dark magenta links */
 .toplinks li a {
     color: #d9b3c9 !important; /* soft mauve */
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: none;
 
     padding: 4px 10px;
@@ -439,10 +439,10 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 
 /* beetle mound */
 .mound-grid img {
-    background: url('https://i.ibb.co/YB5fNK1g/mound-20260512005349.png') no-repeat center !important;
+    background: url('https://i.ibb.co/YB5fNK1g/mound-20260512005349.png')!important;
 
-    width: 0 !important;
-    height: 0 !important;
+    width: 100px !important;
+    height: 100px !important;
 
     padding-top: 80px;
     padding-right: 130px;
@@ -1180,7 +1180,7 @@ div.slider.round::before {
 	content: "CSS by Sak#327675"; 
 	color: #ffb3d6; /* soft rose glow */
 	text-shadow: 1px 1px 1.5px #000; 
-	font-size: 15px !important; 
+	font-size: 10px !important; 
 	position: absolute; 
 	right: 13%; 
 	z-index: 100;
