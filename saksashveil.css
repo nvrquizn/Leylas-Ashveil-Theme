@@ -441,8 +441,8 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 .mound-grid img {
     background: url('https://i.ibb.co/YB5fNK1g/mound-20260512005349.png')!important;
 
-    width: 150px !important;
-    height: 150px !important;
+    width: 250px !important;
+    height: 250px !important;
 
     padding-top: 80px;
     padding-right: 130px;
