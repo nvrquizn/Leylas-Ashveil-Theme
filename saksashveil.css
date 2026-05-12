@@ -1315,8 +1315,6 @@ img[src$="den_beetlebook.png"] {
     max-width: 900px;
     margin: 0 auto;
     overflow: hidden; /* keeps layout stable */
-    display: flex;
-    gap: 10px;
 
     font-family: 'Cinzel', serif;
 }
@@ -1325,7 +1323,6 @@ img[src$="den_beetlebook.png"] {
 /* 🌹 BOX — DARK MAGENTA GLOW */
 /* ============================= */
 .box {
-	flex: 1;
     float: left;
     width: 32%;
     margin-right: 2%;
