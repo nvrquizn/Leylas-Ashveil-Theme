@@ -1319,6 +1319,12 @@ img[src$="den_beetlebook.png"] {
     font-family: 'Cinzel', serif;
 }
 
+.boxcontainer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* ============================= */
 /* 🌹 BOX — DARK MAGENTA GLOW */
 /* ============================= */
