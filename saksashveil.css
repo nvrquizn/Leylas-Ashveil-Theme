@@ -265,7 +265,7 @@ button#label_currentChannel {
 .toplinks {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
 
     font-family: 'Cinzel', serif;
 }
@@ -273,7 +273,7 @@ button#label_currentChannel {
 /* dark magenta links */
 .toplinks li a {
     color: #d9b3c9 !important; /* soft mauve */
-    font-size: 10px;
+    font-size: 8px;
     text-decoration: none;
 
     padding: 4px 10px;
