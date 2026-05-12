@@ -94,19 +94,6 @@ READ ME:
 
     color: var(--kolur5) !important;
   }
-
-  /* 🩸 floating box positioning */
-  .boxtopper {
-    padding: none;
-    float: left;
-    margin: -180px;
-    height: 30px;
-    width: 300px;
-    position: relative;
-    z-index: 1;
-    margin-left: 0px;
-    pointer-events:none !important;
-  }
 }
 
 /* ============================= */
