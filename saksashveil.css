@@ -1324,7 +1324,10 @@ img[src$="den_beetlebook.png"] {
 /* 🌹 BOX — DARK MAGENTA GLOW */
 /* ============================= */
 .box {
-    flex: 1;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+	
     height: 240px;
 
     background: linear-gradient(
