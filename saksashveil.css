@@ -1412,3 +1412,23 @@ img[src$="den_beetlebook.png"] {
 
     box-shadow: 0 0 8px rgba(255,46,79,0.35);
 }
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+
+@media (max-width: 767px) {
+
+    .boxcontainer {
+        overflow: hidden;
+    }
+
+    .box {
+        float: left;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+
+        height: auto;
+    }
+}
