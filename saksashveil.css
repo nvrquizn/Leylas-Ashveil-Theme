@@ -1183,7 +1183,7 @@ div.slider.round::before {
 	font-size: 12px !important; 
 	position: absolute; 
 	right: 13%; 
-	margin: 5px;
+	margin: 10px;
 	z-index: 100;
 
 	font-family: 'Cinzel', serif;
