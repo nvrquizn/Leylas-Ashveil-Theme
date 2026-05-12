@@ -94,6 +94,19 @@ READ ME:
 
     color: var(--kolur5) !important;
   }
+	
+/* 🩸 floating box positioning */
+  .boxtopper {
+    padding: none;
+    float: left;
+    margin: -180px;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    pointer-events:none !important;
+  }
 }
 
 /* ============================= */
@@ -117,6 +130,19 @@ READ ME:
     font-size: 18px !important;
 
     color: var(--kolur5) !important;
+  }
+
+/* 🩸 floating box positioning */
+  .boxtopper {
+    padding: none;
+    float: right;
+    margin: -680px;
+    height: 30px;
+    width: 340px;
+    position: relative;
+    z-index: 3;
+    margin-right: -30px;
+    pointer-events:none !important;
   }
 }
 
@@ -1385,18 +1411,4 @@ img[src$="den_beetlebook.png"] {
     border-radius: 10px;
 
     box-shadow: 0 0 8px rgba(255,46,79,0.35);
-}
-
-/* ============================= */
-/* 📱 MOBILE */
-/* ============================= */
-
-@media (max-width: 767px) {
-    .boxcontainer {
-        flex-direction: column;
-    }
-
-    .box {
-        height: auto;
-    }
 }
