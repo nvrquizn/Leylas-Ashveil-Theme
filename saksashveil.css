@@ -1315,7 +1315,8 @@ img[src$="den_beetlebook.png"] {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    overflow: hidden; /* keeps layout stable */
+    display: flex;
+    gap: 10px;
 
     font-family: 'Cinzel', serif;
 }
@@ -1325,10 +1326,7 @@ img[src$="den_beetlebook.png"] {
 /* ============================= */
 
 .box {
-    float: left;
-    width: 32%;
-    margin-right: 2%;
-
+    flex: 1;
     height: 240px;
 
     background: linear-gradient(
@@ -1338,15 +1336,14 @@ img[src$="den_beetlebook.png"] {
     ) !important;
 
     color: #ffe6f2;
-
-    padding: 10px;
+    padding: 12px;
 
     border: 1px solid rgba(255, 46, 79, 0.30);
-    border-radius: 10px;
+    border-radius: 12px;
 
     box-shadow:
         0 0 18px rgba(0,0,0,0.65),
-        inset 0 0 20px rgba(255, 46, 79, 0.10),
+        inset 0 0 25px rgba(255, 46, 79, 0.10),
         0 0 8px rgba(160, 0, 105, 0.14);
 
     box-sizing: border-box;
@@ -1357,20 +1354,15 @@ img[src$="den_beetlebook.png"] {
     font-family: 'Cinzel', serif;
 }
 
-/* remove spacing on last box */
-.boxcontainer .box:last-child {
-    margin-right: 0;
-}
-
 /* ============================= */
 /* ✨ VELVET HOVER — NEON ROSE LIGHT */
 /* ============================= */
 
 .box:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
 
     box-shadow:
-        0 0 30px rgba(255, 46, 79, 0.35),
+        0 0 20px rgba(255, 46, 79, 0.35),
         inset 0 0 25px rgba(255, 46, 79, 0.15);
 }
 
@@ -1426,12 +1418,11 @@ img[src$="den_beetlebook.png"] {
 /* ============================= */
 
 @media (max-width: 767px) {
+    .boxcontainer {
+        flex-direction: column;
+    }
 
     .box {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 10px;
-
         height: auto;
     }
 }
