@@ -146,6 +146,14 @@ READ ME:
   }
 }
 
+/* Crimson Moon Logo Replacer */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://i.ibb.co/G3N4fhtT/crimsonmoonlogo-20260512023835.png');
+    width: 230px !important;
+    height: 130px !important;
+    object-fit: contain !important;
+}
+
 /* Night Diamond Bloody Red Cursor */
 * {
   cursor: url('https://cdn.cursors-4u.net/css-previews/night-diamond-bloody-red-6dc8dd29-css.webp') 0 0, auto !important;
