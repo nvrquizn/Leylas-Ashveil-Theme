@@ -438,16 +438,17 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 /* ============================= */
 
 .mound-grid img {
-    width: 200px !important;
-    height: 150px !important;
+    background: url('https://i.ibb.co/VpCBDnV0/Screenshot-2026-05-12-at-21-42-43.png') no-repeat center !important;
 
-    display: block;
-    margin: 10px auto 0 auto;
+    width: 0;
+    height: 0;
 
-    object-fit: cover;
+    padding-top: 80px;
+    padding-right: 130px;
+
+    max-height: 150px;
 
     border-radius: 10px !important;
-
     opacity: 0.85;
 
     box-shadow:
@@ -455,6 +456,8 @@ div.cave-grid > img[src$="caveunused.jpg"] {
         0 0 10px rgba(135, 0, 86, 0.18) !important;
 
     transition: 0.3s ease;
+
+    background-size: contain; /* 🔥 THIS is the important fix */
 }
 
 /* hover */
