@@ -444,6 +444,9 @@ div.cave-grid > img[src$="caveunused.jpg"] {
     width: 200px !important;
     height: 150px !important;
 
+    display: block;
+    margin: 0 auto;   /* centers it */
+
     object-fit: contain !important;
 
     border-radius: 10px !important;
@@ -454,7 +457,7 @@ div.cave-grid > img[src$="caveunused.jpg"] {
         1px 1px 5px rgba(0,0,0,0.55),
         0 0 10px rgba(135, 0, 86, 0.18) !important;
 
-    transition: 0.9s ease;
+    transition: 0.3s ease;
 }
 
 /* hover */
