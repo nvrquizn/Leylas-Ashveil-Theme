@@ -437,17 +437,14 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 /* 🌑 MOUNDS */
 /* ============================= */
 
-/* beetle mound */
 .mound-grid img {
-    content: url('https://i.ibb.co/VpCBDnV0/Screenshot-2026-05-12-at-21-42-43.png') !important;
-
     width: 200px !important;
     height: 150px !important;
 
     display: block;
-    margin: 0 auto;   /* centers it */
+    margin: 10px auto 0 auto;
 
-    object-fit: contain !important;
+    object-fit: cover;
 
     border-radius: 10px !important;
 
@@ -462,11 +459,8 @@ div.cave-grid > img[src$="caveunused.jpg"] {
 
 /* hover */
 .mound-grid img:hover {
-    transition: 0.9s !important;
-	padding-top: 80px;
-	padding-right: 130px;
-	max-height:150px;
     opacity: 1;
+    transform: scale(1.03);
 }
 
 /* ============================= */
