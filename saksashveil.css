@@ -548,11 +548,11 @@ table#player img:hover {
 	content: "";
 
 	position: absolute;
-	left: 12px;
-	top: 23px;
+	left: 22px;
+	top: 33px;
 
-	width: 200px;
-	height: 200px;
+	width: 215px;
+	height: 215px;
 
 	background: url("https://i.ibb.co/2YkmPFLX/silverframe.gif") no-repeat center;
 	background-size: contain;
