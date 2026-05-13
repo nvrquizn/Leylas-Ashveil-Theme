@@ -548,8 +548,8 @@ table#player img:hover {
 	content: "";
 
 	position: absolute;
-	left: -12px;
-	top: -3px;
+	left: -2px;
+	top: 13px;
 
 	width: 200px;
 	height: 200px;
